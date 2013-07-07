@@ -1,0 +1,13 @@
+#
+# THIS FILE IS MANAGED BY PUPPET
+# <%= file %>
+#
+
+<% for filter in @filters %>
+[<%= filter["name"]%>]
+enabled 	= <%= filter["enabled"]%>
+<%= filter["config"]%>
+
+<% end %>
+
+
